@@ -139,15 +139,15 @@
                                 $user_email = $userDetails['email'];
 
 
-                                $constSql = "SELECT * FROM orders WHERE email = '$user_email'";
-                                $constResult = mysqli_query($con, $constSql);
+                                $contSql = "SELECT * FROM orders WHERE email = '$user_email'";
+                                $contResult = mysqli_query($con, $contSql);
 
-                                while($constrow = mysqli_fetch_array($constResult)) { ?>
+                                while($constrow = mysqli_fetch_array($contResult)) { ?>
 
                                     <tr>
-                                        <td><?php echo $constrow["order_id"]; ?></td>
-                                        <td><?php echo $constrow["order_detials"]; ?></td>
-                                        <td><?php echo $constrow["amount"]; ?></td>
+                                        <td><?php echo $controw["order_id"]; ?></td>
+                                        <td><?php echo $controw["order_detials"]; ?></td>
+                                        <td><?php echo $controw["amount"]; ?></td>
 
                                         
                                         
